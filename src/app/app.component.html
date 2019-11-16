@@ -1,0 +1,45 @@
+<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+  <span class="title-center">Aplikacija za validaciju JMBG a - Stefan Orcic I7 10/2019</span>
+</mat-toolbar>
+
+<div class="center margin-top">
+  <mat-form-field>
+    <input matInput placeholder="Ime"  [(ngModel)]="ime" name="ime" required>
+  </mat-form-field>
+</div>
+<div class="center">
+  <mat-form-field>
+    <input matInput placeholder="Prezime"  [(ngModel)]="prezime" name="prezime" required>
+  </mat-form-field>
+</div>
+<div class="center">
+  <mat-form-field>
+    <input matInput placeholder="Maticni broj"  [(ngModel)]="mbr" name="mbr" required>
+  </mat-form-field>
+</div>
+<div class="center margin">
+  <button mat-raised-button color="primary" (click)="check()" [disabled]="!ime || !prezime || !mbr">
+    Validiraj
+  </button>
+</div>
+<div *ngIf="valid" class="center">
+  Gradjanin : {{ime}} {{prezime}}
+</div>
+<div class="center">
+  {{pol}}
+</div>
+<div class="center">
+  {{poruka}}
+</div>
+<div class="center">
+  {{pokraina}} {{region}}
+</div>
+
+
+
+
+
+
+
+
