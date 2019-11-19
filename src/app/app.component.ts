@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'maticni broj - Stefan Keler';
+  title = 'maticni broj - Stefan Orcic';
 
   public pokraine = [
     "Stranci bez državljanstva bivše SFRJ ili njenih naslednica:",
