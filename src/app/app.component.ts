@@ -186,7 +186,7 @@ export class AppComponent {
       }else{
         var d = new Date(godina+"-" + mm + "-" +dd);
 
-        if(d.getDay()){
+        if(d.getDay() >= 0 && d.getDay() <=6 ){
           this.poruka = "Datum rodjenja: " + dd + "." + mm + "." + godina + ".";
           this.pokraina = this.pokraine[Math.floor(parseInt(rr)/10)];
           if(this.regioni[parseInt(rr)]){
